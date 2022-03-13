@@ -36,13 +36,16 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-O5-Tft">
-                                <rect key="frame" x="157" y="802" width="114" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-O5-Tft">
+                                <rect key="frame" x="165" y="807" width="98" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oeh-O5-Tft" secondAttribute="height" multiplier="114:35" id="Cow-Ap-RjF"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEk-q7-MQ3"/>
                                 </connections>
@@ -61,6 +64,7 @@
                     <connections>
                         <outlet property="greenLight" destination="eAw-zU-Av6" id="b8O-ce-NOz"/>
                         <outlet property="redLight" destination="Uve-bJ-iRZ" id="LJa-lp-srs"/>
+                        <outlet property="startButton" destination="oeh-O5-Tft" id="IzK-HZ-X3a"/>
                         <outlet property="yellowLight" destination="Bio-g4-FQo" id="UA1-oe-hSO"/>
                     </connections>
                 </viewController>
@@ -70,6 +74,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
